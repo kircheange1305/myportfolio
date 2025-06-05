@@ -1,0 +1,96 @@
+*.[oa]
+*~
+#navbar  {
+  position:fixed;
+  z-index: 1000;
+  top: 0;
+}
+body  {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: : #fff0f6;
+  background-image: url('images/pink_swirl.png');direct image URL needed */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #4a2c2a;
+  margin: 0;
+  padding: 10px;
+ }
+
+h1  {
+  color:#d72631;
+  font-size: 2.5rem;
+  }
+
+h2  {
+    font-weight: normal;
+    line-height: 1.5;
+    margin-top: 0;
+    color:#fce4ec;
+  }
+
+.pink-box  {
+  background: radial-gradient(circle, pink 70 %, transparent 100%)
+
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.5;
+  position: relative;
+}
+
+.pink-box::before  {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: 10px;
+  background: radial-gradient(circle, pink 60%, transparent 100%)
+  z-index: -1;
+}
+
+h3  {
+    color: #e85d04;
+    margin-top: 40px;
+    border-bottom: px solid #d72631;
+    padding-bottom: 5px;
+ }
+
+  .project-tile  {
+    display: inline-block;
+    background-color: #f72585;
+    color:white;
+    padding: 15px 25px;
+    margin: 10px 5px;
+    text-decoration: line-through;
+    border-radius: 8px;
+    transition: background-color: 0.3s ease;
+   }
+
+  .project-tile: hover  {
+    background-color: #b31257;
+ }
+
+  #skills form label  {
+    display: block;
+    font-size: 1.1rem;
+    margin: 8px 0;
+    cursor:pointer;
+    color: #6a040f;
+  }
+
+  #contact a  {
+    color: #d72631;
+    text-decoration: none;
+  }
+
+  #contact a:hover  {
+    text-decoration: underline;
+  }
+
+@media (max-width: 600px)  {
+  #navbar  {
+    flex-direction: column;
+    align-item: center;
+}
